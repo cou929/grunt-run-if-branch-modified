@@ -25,6 +25,7 @@ module.exports = function(grunt) {
         var file_patterns = this.data.file_patterns;
         var should_run = (function() {
             var diff_res = execsyncs(options.cmd);
+            diff_res = Buffer.isBuffer(diff_res) ? diff_res.toString() : diff_res;
             var updated_files = diff_res.split('\n').filter(function(file) { return file.length > 0; });
 
             grunt.verbose.writeflags(updated_files, 'Updated files');

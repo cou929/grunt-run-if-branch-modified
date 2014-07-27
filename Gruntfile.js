@@ -27,19 +27,19 @@ module.exports = function(grunt) {
 
         run_if_branch_modified: {
             default: {
-                file_patterns: ['*.txt'],
+                file_patterns: ['*.test'],
                 tasks: ['invoke_check:default']
             },
             match: {
                 options: {
-                    cmd: 'echo sample.txt'
+                    cmd: 'echo sample.txt; echo another.txt'
                 },
                 file_patterns: ['*.txt'],
                 tasks: ['invoke_check:match']
             },
             unmatch: {
                 options: {
-                    cmd: 'echo sample.js'
+                    cmd: 'echo sample.js; echo another.json'
                 },
                 file_patterns: ['*.txt'],
                 tasks: ['invoke_check:unmatch']

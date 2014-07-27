@@ -1,5 +1,7 @@
 # grunt-run-if-branch-modified
 
+[![Build Status](https://travis-ci.org/cou929/grunt-run-if-branch-modified.svg?branch=master)](https://travis-ci.org/cou929/grunt-run-if-branch-modified)
+
 > Run grunt tasks according to changed files of the branch.
 
 ## Getting Started

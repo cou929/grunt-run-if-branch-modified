@@ -27,6 +27,9 @@ module.exports = function(grunt) {
 
         run_if_branch_modified: {
             default: {
+                options: {
+                    cmd: 'echo default'
+                },
                 file_patterns: ['*.test'],
                 tasks: ['invoke_check:default']
             },
